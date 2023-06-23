@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(232, 232, 216);
+}
+
+.container {
+    display: inline-block;
+}
+
+.text {
+    font-size: 4em;
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 5px solid;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(17),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% {
+        border-color: transparent
+    }
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
